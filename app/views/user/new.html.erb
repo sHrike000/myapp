@@ -1,8 +1,11 @@
+<h1>Sign Up</h1>
 <%= form_tag'/users/create' do %>
 <p>user name</p>
 <input name = 'name'>
 <p>mail address</p>
 <input name = 'email'>
+<p>password</p>
+<input type = 'password', name= 'password', value="<%= @user.password %>">
 
 <input type = 'submit' value='New Registration'>
 <% end %>
